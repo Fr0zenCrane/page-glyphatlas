@@ -26,7 +26,11 @@ p { margin: 0 0 17px; }
 p:last-child { margin-bottom: 0; }
 strong { font-weight: 600; }
 .hero { padding-top: 39px; padding-bottom: 28px; }
-.authors { display: flex; justify-content: center; flex-wrap: wrap; gap: 6px 32px; margin: 24px 0 16px; font-size: 19px; color: #39475a; }
+.authors { display: flex; justify-content: center; flex-wrap: wrap; gap: 6px 32px; margin: 24px 0 5px; font-size: 19px; color: #39475a; }
+.authors sup, .affiliations sup { font-size: .68em; line-height: 0; vertical-align: super; }
+.authors sup { margin-left: 3px; }
+.affiliations { display: flex; justify-content: center; flex-wrap: wrap; gap: 5px 24px; margin: 0 0 18px; color: var(--muted); font-size: 16px; }
+.affiliations sup { color: #526987; }
 .resource-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px 30px; font-size: 20px; line-height: 1.5; }
 .resource-placeholder { color: #7c8694; cursor: default; }
 figure { margin: 0; }
@@ -109,7 +113,8 @@ body.dialog-open { overflow: hidden; }
   .title-break { display: none; }
   h2 { font-size: 23px; }
   .method-part > h3 { font-size: 20px; }
-  .authors { font-size: 16px; gap: 3px 17px; margin: 20px 0 15px; }
+  .authors { font-size: 16px; gap: 5px 10px; margin: 20px 0 6px; }
+  .affiliations { font-size: 14px; gap: 4px 18px; margin-bottom: 17px; }
   .resource-links { font-size: 17px; gap: 8px 18px; }
   .teaser { margin-top: 23px; }
   figcaption { font-size: 13px; }
