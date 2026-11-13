@@ -40,7 +40,14 @@ figure { margin: 0; }
 .zoom-hint { position: absolute; right: 8px; top: 8px; padding: 6px 10px; font-size: 12px; line-height: 1.3; border-radius: 5px; background: rgb(255 255 255 / 94%); color: var(--link); box-shadow: 0 1px 4px #0002; opacity: 0; transition: opacity .16s; }
 .figure-link:hover .zoom-hint, .figure-link:focus-visible .zoom-hint { opacity: 1; }
 figcaption { margin-top: 14px; color: var(--muted); text-align: center; font-size: 15px; line-height: 1.5; }
-.teaser figcaption { max-width: 960px; margin: 18px auto 0; text-align: left; line-height: 1.65; }
+.teaser figcaption { max-width: 960px; margin: 18px auto 0; line-height: 1.65; }
+main .content > p:not(.section-kicker):not(.table-note),
+.method-part > p,
+.teaser figcaption {
+  text-align: justify;
+  text-align-last: left;
+  hyphens: auto;
+}
 .teaser figcaption strong { color: var(--ink); }
 .framework { margin: 24px 0; }
 .atlas-figure { width: 80%; margin: 26px auto; }
